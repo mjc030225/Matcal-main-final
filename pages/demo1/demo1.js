@@ -1139,7 +1139,7 @@ Page({
   postdata(data){
     var that=this;
     wx.request({
-      url: 'http://127.0.0.1:5000',
+      url: 'http://172.17.0.2:80/',
       data:data,
       method:'POST',
       success:function(res)
@@ -1161,7 +1161,7 @@ Page({
   getdet(data){
     var that=this;
     wx.request({
-      url: 'http://127.0.0.1:5000',
+      url: 'http://172.17.0.2:80/',
       method:'POST',
       data:data,
       success:function(res)
@@ -1183,7 +1183,7 @@ Page({
   getrank(data){
     var that=this;
     wx.request({
-      url: 'http://127.0.0.1:5000',
+      url: 'http://172.17.0.2:80/',
       method:'POST',
       data:data,
       success:function(res)
